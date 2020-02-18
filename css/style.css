@@ -125,17 +125,15 @@ h4 {
 .main-nav li a {
 	font-size:14px;
 	color: #343434;
-
-}
-
-.main-nav li a:hover , .contact-nav li a:hover , .main-nav li a:focus , .contact-nav li a:focus {
-	/* background-color:transparent; */
-	color: #f36700;
-}
-
-.main-nav li a {
 	text-transform: uppercase;
 }
+
+.main-nav li a:hover , .main-nav li a:focus {
+	color: #f36700;
+	/* background-color: #fff9f3!important;	 */
+	background-color: transparent!important;	
+}
+
 
 /* --- Fixed Nav --- */
 @media only screen and (min-width: 767px) {
@@ -192,7 +190,17 @@ h4 {
 	Why_us
 \*------------------------------------*/
 .whyus-section{
-	margin: 4rem 0 2rem;
+	margin: 4rem 0 0rem;
+	background-color: #fff9f3;
+	padding-bottom: 7rem;
+	clip-path:polygon(0 0,100% 0,100% 69%,0 100%);
+}
+@media only screen and (max-width:767px){
+	.whyus-section{
+		margin: 4rem 0 2rem;
+		padding: 2rem 0 2rem;
+		clip-path:polygon(0 0,100% 0,100% 100%,0 100%);
+	}	
 }
 .why_us{
 	margin-top: 50%;

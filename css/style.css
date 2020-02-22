@@ -190,14 +190,13 @@ h4 {
 	Why_us
 \*------------------------------------*/
 .whyus-section{
-	margin: 4rem 0 0rem;
+	margin: 8rem 0 0rem;
 	background-color: #fff9f3;
 	padding-bottom: 7rem;
 	clip-path:polygon(0 0,100% 0,100% 69%,0 100%);
 }
 @media only screen and (max-width:767px){
 	.whyus-section{
-		background-color: none;
 		margin: 4rem 0 2rem;
 		padding: 2rem 0 2rem;
 		clip-path:polygon(0 0,100% 0,100% 100%,0 100%);
@@ -266,7 +265,7 @@ h4 {
 	font-size: 2.5em; 
 }
 .info-horizontal .description {
-	overflow: hidden; 
+	overflow: hidden;
 }
 .icon.icon-primary {
 	color: #f96332; 
@@ -332,6 +331,7 @@ div.service-col{
 /*------------------------------------*\
 	Footer
 \*------------------------------------*/
+
 footer.footer {
 	margin-top: 2rem;
 	padding-top: 2.2rem;
@@ -371,9 +371,17 @@ footer.footer {
 /*------------------------------------*\
 	About Us
 \*------------------------------------*/
-.about-us-section {
+@media only screen and (max-width: 400px){
+	.aboutus-image{
+		display: none!important;
+	}
+	.about-us-section-content{
+		/* visibility: hidden; */
+		margin: 0!important;
+	}	
 
 }
+
 .aboutus-image{
 	background-image: url('../img/square.png');
 	background-size: cover;

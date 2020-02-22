@@ -35,13 +35,14 @@
 
 @media only screen and (max-width:767px) {
 
- #sideNavMenu {
-   display: block;
-   z-index: 15;
- }
-
+  #sideNavMenu {
+    display: block;
+    z-index: 15;
+  }
+ 
 }
-.sideNav-icon {
+
+ .sideNav-icon {
   margin: 1em;
   width: 30px;
 }

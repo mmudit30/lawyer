@@ -1,3 +1,19 @@
+<?php
+$db_host="localhost";
+$db_user="root";
+$db_pass="";
+$db_name="ankit_adv";
+$table_name="services";
+$connection=mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+if(!$connection){
+    die('Could not connect: ');
+}
+// echo 'Successfully Connected<br>';
+$quer="select * from $table_name";
+$res=mysqli_query($connection, $quer);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,204 +197,22 @@
 			
 			<!-- row1 -->
 			<div class="service-row row accordion">
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
-						Bank & Financial
-					</div>
-					<div id="collapseOne" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
-						Tax & Business Law
-					</div>
-					<div id="collapseTwo" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
-						Car accidents
-					</div>
-					<div id="collapseThree" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
-						Property law
-					</div>
-					<div id="collapseFour" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false">
-						Bank & Financial
-					</div>
-					<div id="collapseFive" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false">
-						Tax & Business Law
-					</div>
-					<div id="collapseSix" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false">
-						Car accidents
-					</div>
-					<div id="collapseSeven" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false">
-						Property law
-					</div>
-					<div id="collapseEight" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-			</div>
-			<!-- row1 -->
-			<div class="service-row row accordion">
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
-						Bank & Financial
-					</div>
-					<div id="collapseOne" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
-						Tax & Business Law
-					</div>
-					<div id="collapseTwo" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
-						Car accidents
-					</div>
-					<div id="collapseThree" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
-						Property law
-					</div>
-					<div id="collapseFour" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false">
-						Bank & Financial
-					</div>
-					<div id="collapseFive" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false">
-						Tax & Business Law
-					</div>
-					<div id="collapseSix" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false">
-						Car accidents
-					</div>
-					<div id="collapseSeven" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false">
-						Property law
-					</div>
-					<div id="collapseEight" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-			</div>
-			<!-- row1 -->
-			<div class="service-row row accordion">
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
-						Bank & Financial
-					</div>
-					<div id="collapseOne" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
-						Tax & Business Law
-					</div>
-					<div id="collapseTwo" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
-						Car accidents
-					</div>
-					<div id="collapseThree" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
-						Property law
-					</div>
-					<div id="collapseFour" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false">
-						Bank & Financial
-					</div>
-					<div id="collapseFive" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false">
-						Tax & Business Law
-					</div>
-					<div id="collapseSix" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false">
-						Car accidents
-					</div>
-					<div id="collapseSeven" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
-				<div class="service-col col-sm-6 col-md-3">
-					<div class="service text-center" role="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false">
-						Property law
-					</div>
-					<div id="collapseEight" class="collapse">
-						Lorem, ipsum dolor.
-					</div>	
-				</div>
+				
+				<?php
+				$i="a";
+				while ($row = mysqli_fetch_assoc($res)) {
+					print '<div class="service-col col-sm-6 col-md-3">';
+						print '<div class="service text-center" role="button" data-toggle="collapse" data-target="#'.$i.'" aria-expanded="false">';
+							echo $row['service_head'];
+						print '</div>';
+						print "<div id='".$i."' class='service-desc collapse'>";
+							echo $row['service_desc'];
+						print "</div>";
+					print "</div>";
+					$i++;
+				}
+				$i="a";
+				?>
 			</div>
 			
 	</div>
